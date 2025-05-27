@@ -1,3 +1,10 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  position: relative;
+  min-height: 100vh;
+  padding: 0;
+}
 .navbar-brand {
     color: #FFCB00;
 }
@@ -25,12 +32,13 @@ a {
     color: #E31918;
 }
 .account {
-display: flex;
+ position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
-  position: relative;
-   object-fit: cover;
-
+  margin-top: 2rem;
 }
 .log-in {
     background-color: #E31918;
@@ -51,6 +59,8 @@ display: flex;
     width: 50%;
     display: flex;
     align-items: center;
+    margin: 3rem;
+    margin-left: 18rem;
     border: 2px solid #FFCB00;
     border-radius: 20px;
     padding: 0.5rem 1rem;
@@ -62,6 +72,13 @@ display: flex;
       font-size: 1rem;
     }
 }
+.promo-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 2rem 2rem;
+}
 .cat-with-book {
     margin-top: 2rem;
     img {
@@ -70,14 +87,15 @@ display: flex;
   }
 
   .text-info {
-    margin-top: 1rem;
+    margin-top: 7rem;
     background-color: #FFCB00;
-    padding: 1rem 1.5rem;
+    padding: 2rem 1.5rem;
     border-radius: 20px;
     max-width: 500px;
     text-align: left;
     font-size: 1rem;
     font-weight: bold;
+     align-items: flex-start;
 
     p {
       margin: 0.5rem 0 0;
